@@ -1,7 +1,7 @@
 # -React-
 2025년 React 실무 수업의 학습 파일
 
-실무 수업의 학습 노트는 Notion에 정리되어 있으며, 본 문서는 실습 파일을 위주로 작성되었습니다.
+실무 수업의 학습 노트는 Notion에 정리되어 있으며, 본 문서는 실습 파일을 위주로 작성되었습니다. <br />
 **프로젝트 이름 생성 규칙 :** r(react)00(프로젝트 번호)
 
 
@@ -15,3 +15,13 @@ npm create vite@latest <프로젝트명> -- --template react ts
 ```
 npm install
 ```
+<br />
+
+#### 생성된 리액트 프로젝트 오류
+1. tsconfig.app.json 파일
+```
+"incremental": true
+```
+incremental 옵션을 추가하면 해결
+2. tsconfig.node.json 파일
+TypeScript 버전이 낮아서 발생하는 오류로 작업 환경이 아닌 프로젝트 버전을 따르도록 변경
