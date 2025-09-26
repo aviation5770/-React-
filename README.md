@@ -19,14 +19,28 @@ npm install
 <br />
 
 #### 생성된 리액트 프로젝트 오류
-1. tsconfig.app.json 파일
+1. ``tsconfig.app.json`` 파일
 ```
 "incremental": true
 ```
 incremental 옵션을 추가하면 해결
-2. tsconfig.node.json 파일
-TypeScript 버전이 낮아서 발생하는 오류로 작업 환경이 아닌 프로젝트 버전을 따르도록 변경
+2. ``tsconfig.node.json`` 파일
+TypeScript 버전이 낮아서 발생하는 오류로 작업 환경이 아닌 프로젝트 버전을 따르도록 변경 <br />
 
+## 프로젝트 단위의 prettier 규칙 적용하기
+프로젝트 루트에 ``.prettier.rc.cjs `` 파일 추가
+```
+module.exports = {
+  bracketSpacing : false,       // 객체 리터럴에서 중괄호 안에 공백을 넣을지 여부
+  jsxBracketSameLine : true,    // 여러 줄 JSX에서 마지막 >를 같은 줄에 둘지 여부
+  singleQuote: true,            // 문자열을 '작은따옴표'로 통일
+  trailingComma : false,        // 여러 줄일 때 마지막 요소 뒤에 ,를 붙일지 여부
+  arrowParens : 'avoid',        // 화살표 함수 매개변수 괄호 처리(하나의 매개변수일때 괄호 생략)
+  semi: false,                  // 문장 끝에 세미콜론(;) 붙일지 여부
+  printWidth: 90,               // 한 줄 최대 길이 (90을 넘어가면 자동 줄바꿈)
+};
+
+```
 ## 리액트 프로젝트 모드
 리액트 개발은 프로젝트 개발 시 사용하는 **개발 모드**와 개발 완료 후 실제 사용자에게 서비스 할 때 사용하는 **프로덕션 모드**가 존재
 
