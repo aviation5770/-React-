@@ -1,19 +1,13 @@
 import {Component} from "react"
+import ClassComponent from "./ClassComponent"
 
 export default class App extends Component {
   render() {
-    const isLoading = true
-    const children = isLoading ? (
-      <p>Loading ..</p>
-    ) : (
+    return (
       <ul>
-        <li>
-          <a href="https://www.google.com">
-            <p> Go to Google</p>
-          </a>
-        </li>
+        <ClassComponent />
+        <ClassComponent />
       </ul>
     )
-    return children
   }
 }
