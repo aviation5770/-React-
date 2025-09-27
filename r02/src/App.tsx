@@ -3,7 +3,9 @@ import {Component} from "react"
 export default class App extends Component {
   render() {
     const isLoading = true
-    const children = (
+    const children = isLoading ? (
+      <p>Loading ..</p>
+    ) : (
       <ul>
         <li>
           <a href="https://www.google.com">
@@ -12,11 +14,6 @@ export default class App extends Component {
         </li>
       </ul>
     )
-    return (
-      <div>
-        {isLoading && <p>Loading ..</p>}
-        {!isLoading && children}
-      </div>
-    )
+    return children
   }
 }
