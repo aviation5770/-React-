@@ -1,16 +1,15 @@
-import './App.css'
-import * as D from './data'
+import {Component} from "react"
 
-function App() {
-  return (
-    <div>
-      <p>
-        {D.randomName()}, {D.randomJobTitle()}, {D.randomDayMonthYear()}
-      </p>
-      <img src = {D.randomAvatar()} height = "50" alt = "avatar" />
-      <img src = {D.randomImage()} height = "300" alt = "somewhere" />
-    </div>
-  )
+export default class App extends Component {
+  render() {
+    return (
+      <ul>
+        <li>
+          <a href="https://www.google.com">
+            <p> Go to Google</p>
+          </a>
+        </li>
+      </ul>
+    )
+  }
 }
-
-export default App
