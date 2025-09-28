@@ -1,12 +1,18 @@
 import { Component } from "react";
 
-export default class ClassComponent extends Component {
+export type ClassComponentProps = {
+  href : string,
+  text : string
+}
+
+export default class ClassComponent extends Component<ClassComponentProps> {
   render() {
+    const href = this.props.href
+    const text = this.props.text
+
     return (
       <li>
-        <a href="https:/www.google.com">
-          <p>Go to Google</p>
-        </a>
+        <a href={href}><p>{text}</p></a>
       </li>
     )
   }
