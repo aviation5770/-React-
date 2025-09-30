@@ -1,7 +1,10 @@
 import ArrowComponent from "./ArrowComponent"
 import ClassComponent from "./ClassComponent"
+import P from "./P"
 
 export default function App () {
-  const text = [<p>Hello</p>, <p>Would</p>]  
-  return <div>{text}</div>
+  const text = ['hello', 'would'].map((text, index) =>
+    <p key={index} children={text} />
+  )
+  return <div children={text} />
 }
