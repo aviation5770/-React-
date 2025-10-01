@@ -1,7 +1,9 @@
-import EventListener from './pages/EventListener'
-import OnClick from './pages/OnClick'
-import ReactOnClick from './pages/ReactOnClick'
-import DispatchEvent from './pages/DispatchEvent'
+// import EventListener from './pages/EventListener'
+// import OnClick from './pages/OnClick'
+// import ReactOnClick from './pages/ReactOnClick'
+// import DispatchEvent from './pages/DispatchEvent'
+// 콘솔에 불필요한 메세지 출력 방지
+
 import EventBubbling from './pages/EventBubbling'
 import StopPropagation from './pages/StopPropagation'
 import VariousInputs from './pages/VariousInputs'
@@ -20,10 +22,10 @@ function App() {
       <VariousInputs />
       <StopPropagation />
       <EventBubbling />
-      <DispatchEvent />
+      {/* <DispatchEvent />
       <ReactOnClick />
       <OnClick />
-      <EventListener />
+      <EventListener /> */}
     </div>
   )
 }
