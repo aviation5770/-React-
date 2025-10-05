@@ -13,3 +13,5 @@ export default function EventListener() {
     </div>
   )
 }
+
+// 이벤트 버블링은 기술적 현상 -> 이를 방지하기 위해 사용하는 방식이 이벤트 전파 막기
