@@ -9,7 +9,7 @@
 ## 리액트 프로젝트 생성
 1. 프로젝트 루트 폴더에서 아래 터미널 명령으로 vite-ts 프로젝트 생성
 ```
-npm create vite@latest <프로젝트명> -- --template react ts
+npm create vite@latest <프로젝트명> -- --template react-ts
 ```
 
 2. 생성한 프로젝트 폴더에서 아래 터미널 명령으로 패키지 설치
