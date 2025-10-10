@@ -12,6 +12,7 @@ function App() {
       <Style />
       <Icon />
       <BootStrap />
+      <button className="btn btn-primary">TEST</button>
     </div>
   );
 }
