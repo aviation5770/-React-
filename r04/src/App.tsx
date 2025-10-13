@@ -22,6 +22,14 @@ function App() {
           <div className="inner">Hello CSS</div>
         </div>
       </div>
+
+      <div className="form-group">
+        {/* htmlFor 속성이 (↓) */}
+        <label htmlFor="username" className="label">사용자 이름</label>
+
+        {/* input의 id(↓)와 연결됨 */}
+        <input id="username" type="text" className="input" placeholder="이름을 입력하세요" />
+      </div>
     </div>
   );
 }
