@@ -1,25 +1,67 @@
+/* className 스타일 */
+
 .box {
   width: 150px;
   height: 150px;
   background-color: skyblue;
-  }
-  
-  .btn {
+}
+
+.btn {
   background-color: tomato;
   color: white;
   padding: 8px 16px;
   border-radius: 8px;
-  }
-  .btn:hover {
+}
+
+.btn:hover {
   background-color: darkred;
   cursor: pointer;
+}
+.outer {
+  background: lightgray;
+  margin: 20px; /* 바깥 여백 */
+  padding: 20px; /* 안쪽 여백 */
   }
-  .outer {
-    background: lightgray;
-    margin: 20px; /* 바깥 여백 */
-    padding: 20px; /* 안쪽 여백 */
-    }
-    .inner {
-    background: teal;
-    color: white;
-    }
+
+.inner {
+  background: teal;
+  color: white;
+}
+
+
+/* htmlFor 스타일 */
+
+.form-wrapper {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 24px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  font-family: Arial, sans-serif;
+  background: #fafafa;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+  
+.label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #555;
+}
+
+.input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  font-size: 14px;
+}
+  
+.input:focus {
+  border-color: #2563eb;
+  outline: none;
+  box-shadow: 0 0 3px #2563eb55;
+}
