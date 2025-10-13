@@ -25,7 +25,7 @@ function App() {
 
       <div className="form-group">
         {/* htmlFor 속성이 (↓) */}
-        <label htmlFor="username" className="label">사용자 이름</label>
+        <label htmlFor="username" className="label">사용자 이름</label> {/* for은 JS 예약어이므로 충돌을 피하기 위해 htmlFor로 변경 */}
 
         {/* input의 id(↓)와 연결됨 */}
         <input id="username" type="text" className="input" placeholder="이름을 입력하세요" />
