@@ -12,6 +12,8 @@ function App() {
       <Style />
       <Icon />
       <BootStrap />
+
+      <p /> {/* 화면 가독성 때문에 추가 */}
       <button className="btn btn-primary">TEST</button>
 
       {/* CSS 기본구문 실습 */}
