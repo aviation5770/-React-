@@ -65,3 +65,10 @@
   outline: none;
   box-shadow: 0 0 3px #2563eb55;
 }
+
+.text-blue {
+  color: blue;
+  }
+  .text-red {
+  color: red;
+  }
