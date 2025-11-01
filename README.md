@@ -39,8 +39,22 @@ module.exports = {
   semi: false,                  // 문장 끝에 세미콜론(;) 붙일지 여부
   printWidth: 90,               // 한 줄 최대 길이 (90을 넘어가면 자동 줄바꿈)
 };
-
 ```
+
+## Tailwind CSS 설치하기
+1. 설치
+```
+npm i -D tailwindcss @tailwindcss/postcss postcss
+```
+2. 프로젝트 루트 폴더에 postcss.config.js 파일 추가
+```
+export default {
+  plugins: {
+    "@tailwindcss/postcss": {},
+  },
+};
+```
+
 ## 리액트 프로젝트 모드
 리액트 개발은 프로젝트 개발 시 사용하는 **개발 모드**와 개발 완료 후 실제 사용자에게 서비스 할 때 사용하는 **프로덕션 모드**가 존재
 
