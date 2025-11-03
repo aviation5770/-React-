@@ -20,6 +20,12 @@ npm install
 ```
 <br />
 
+# vite가 잘못된 버전을 가져올 때 해결방법
+npm이 이상한 registry를 보고 있는 문제 -> registry를 npm 공식으로 강제 초기화
+```
+npm config set registry https://registry.npmjs.org/
+```
+
 #### 생성된 리액트 프로젝트 오류
 1. ``tsconfig.app.json`` 파일
 ```
