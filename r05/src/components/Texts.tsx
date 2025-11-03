@@ -16,3 +16,14 @@ export const Title: FC<TitleProps> = ({
   );
   return <p {...props} className={className} />;
 };
+
+export type SubtitleProps = TitleProps & {}; // Title과 속성 동일
+
+export const Subtitle: FC<SubtitleProps> = ({className: _className, numberOfLines, ...props}) => {
+  const className = makeClassName(
+    "font-semibold text-3xl text-center whitespace-pre-line",
+    _className,
+    numberOfLines
+  );
+  return <p {...props} className={className} />;
+};

@@ -1,3 +1,9 @@
-export default function CopyMe() {
-  return <div>CopyMe</div>
-}
+import { Title } from "../components";
+
+export default function TextsTest() {
+  return (
+    <div>
+      <Title>TextsTest</Title>
+    </div>
+  );
+};
