@@ -44,3 +44,16 @@ export const Paragraph: FC<ParagraphProps> = ({className: _className, numberOfLi
   );
   return <p {...props} className={className} />;
 };
+
+
+// 여기부터 Summary 컴포넌트
+export type SummaryProps = TitleProps & {};
+
+export const Summary: FC<SummaryProps> = ({className: _className, numberOfLines, ...props}) => {
+  const className = makeClassName(
+    "text-sm whitespace-pre-line",
+    _className,
+    numberOfLines
+  );
+  return <p {...props} className={className} />;
+};
