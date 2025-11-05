@@ -1,3 +1,9 @@
+import { Title } from "../components";
 export default function CopyMe() {
-  return <div>CopyMe</div>
+  return (
+    <section className="mt-4">
+      <Title>CopyMe</Title>
+      <div className="mt-4"></div>
+    </section>
+  );
 }
