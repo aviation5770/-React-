@@ -12,9 +12,8 @@ export type IconProps = {
   style?: CSSProperties;
 };
 
-export const Icon: FC<IconProps> = (props) => {
-  const { name, style } = props;
+export const Icon: FC<IconProps> = ({ name, ...props }) => {
   return (
-    <span className="material-icons" style={style}>{name}</span>
+    <span className="material-icons" {...props}>{name}</span>
   );
 };
